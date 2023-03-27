@@ -5,7 +5,8 @@ This is a simple to-do list web application built with HTML, CSS, and JavaScript
 ### How to Use
 1. Enter a task in the "Add a task..." input field.
 2. Click the "Add" button or press the "Enter" key to add the task to the list.
-3. To remove a task, click the "❌" button next to it.
+3. To mark a task as completed, click the "✔" button next to it.
+4. To remove a task, click the "❌" button next to it.
 
 ### Live Demo
 Click [here](https://asaggse.github.io/to-do-list/) to see a live demo of this project.
