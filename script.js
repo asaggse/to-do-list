@@ -4,6 +4,15 @@ function addTask() {
 
     if (taskInput.value.trim() !== "") {
         const newTask = document.createElement("li");
+
+        const completeButton = document.createElement("button");
+        completeButton.className = "completeBtn";
+        completeButton.textContent = "✔";
+        completeButton.onclick = function () {
+            newTask.classList.toggle("completed");
+        };
+        newTask.appendChild(completeButton);
+
         const taskText = document.createTextNode(taskInput.value);
         newTask.appendChild(taskText);
 
@@ -19,6 +28,7 @@ function addTask() {
         taskInput.value = "";
     }
 }
+
 
 function removeTask(task) {
     task.parentElement.remove();
