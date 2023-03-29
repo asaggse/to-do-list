@@ -42,3 +42,10 @@ taskInput.addEventListener("keypress", function (event) {
         addTask();
     }
 });
+
+function clearList() {
+    const taskList = document.getElementById("taskList");
+    while (taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
+}
